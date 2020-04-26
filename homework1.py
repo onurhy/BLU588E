@@ -24,10 +24,10 @@ plt.show()
 
 
 #thresholding with different values
-threshold1 = (gray < 32) * 256
-threshold2 = (gray < 64) * 256
-threshold3 = (gray < 128) * 256
-threshold4 = (gray < 156) * 256
+threshold1 = (gray > 32) * 256
+threshold2 = (gray > 64) * 256
+threshold3 = (gray > 128) * 256
+threshold4 = (gray > 156) * 256
 
 #choosing one of them and plotting
 plt.imshow(threshold4, cmap = plt.get_cmap('gray'))
